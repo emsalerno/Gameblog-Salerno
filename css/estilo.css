@@ -240,7 +240,7 @@ justify-items: center;
     align-items: center;
 }
 
-.infoGral {
+.infoPC {
     grid-area: info;
     display: flex;
     flex-direction: column;
@@ -248,15 +248,15 @@ justify-items: center;
     align-items: center;
 }
 
-.infoGral ul{
+.infoPC ul{
     list-style-type: none;
 }
 
-.infoGral ul li{
+.infoPC ul li{
     color:#751242;
 }
 
-.infoGral h2 {
+.infoPC h2 {
     color: #285B77;
 }
 
