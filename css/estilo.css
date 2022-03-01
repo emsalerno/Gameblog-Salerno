@@ -11,6 +11,7 @@
 header {
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 nav {
@@ -250,6 +251,10 @@ justify-items: center;
 
 .infoPC ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .infoPC ul li{
@@ -264,7 +269,7 @@ justify-items: center;
     display: flex;
     flex-direction: row;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 6.5%;
     justify-content: space-evenly;
 }
 
@@ -333,6 +338,29 @@ justify-items: center;
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .infoPC ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .infoPC ul li{
+        color:#751242;
+    }
+    
+    .infoPC h2 {
+        color: #285B77;
+    }
+    
+    .infoPC {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /*Ajustes al apartado de géneros*/
@@ -506,7 +534,7 @@ body {
 /*Ajustes al index*/
 
 .tituloPerif{
-    color: #6F5191;
+    color: #7631c5;
     display: flex;
     justify-content: center;
     align-items: center;

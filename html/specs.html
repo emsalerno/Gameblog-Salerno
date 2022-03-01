@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Información</title>
 </head>
 <body>
@@ -23,14 +24,14 @@
             </ul>
         </nav>
     </header>
-    <h1>Acerca de los juegos</h1>
+    <h1 class="animate__animated animate__fadeIn">Acerca de los juegos</h1>
     <main>
 
         <div>
             
                 <div class="infoGral">
-                    <h2 class="tituloInfo" id="apexLegends">Apex Legends</h2>
-                    <div class="info">
+                    <h2 class="tituloInfo" id="apexLegends" data-aos="fade-up" data-aos-duration="2000">Apex Legends</h2>
+                    <div class="info" data-aos="fade-up" data-aos-duration="2000">
                         <img src="../img/about/aboutapex.jpg" alt="aboutapex" class="aboutImg">
                         <p class="descripcion">Domina con estilo en Apex Legends™, un juego gratuito* de acción en primera persona, donde personajes legendarios con poderosas habilidades forman equipos para luchar y lograr fortuna y gloria en los confines de la Frontera.
 
@@ -61,8 +62,8 @@
                         </ul>
                     </div>
 
-                    <h2 class="tituloInfo" id="cyberpunk2077">Cyberpunk 2077</h2>
-                    <div class="info">
+                    <h2 class="tituloInfo" id="cyberpunk2077" data-aos="fade-up" data-aos-duration="2000">Cyberpunk 2077</h2>
+                    <div class="info" data-aos="fade-up" data-aos-duration="2000">
                         <img src="../img/about/aboutcbp.png" alt="aboutcbp2077" class="aboutImg">
                          <p class="descripcion"> Cyberpunk 2077 es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Tu personaje es V, un mercenario que persigue un implante único que permite alcanzar la inmortalidad. Podrás personalizar las mejoras cibernéticas, las habilidades y el estilo de juego del personaje para dar forma a un mundo y a una historia que depende de tus decisiones.</p>
                     </div>
@@ -87,8 +88,8 @@
                         <li><strong>Almacenamiento:</strong> 70 GB de espacio disponible (SSD recomendable)</li>
                     </ul>
                     </div>
-                    <h2 class="tituloInfo" id="csgo">Counter-Strike Global Offensive</h2>
-                    <div class="info">
+                    <h2 class="tituloInfo" id="csgo" data-aos="fade-up" data-aos-duration="2000">Counter-Strike Global Offensive</h2>
+                    <div class="info" data-aos="fade-up" data-aos-duration="2000">
                         <img src="../img/about/aboutcsgo.jpg" alt="aboutcsgo" class="aboutImg">
                          <p class="descripcion"> Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionera la franquicia cuando salió hace 19 años. CS:GO trae nuevos mapas, personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido clásico de CS
                     </div>
@@ -112,8 +113,8 @@
                             <li><strong>Almacenamiento:</strong> 30 GB de espacio disponible</li>
                         </ul>
                     </div>
-                        <h2 class="tituloInfo" id="gtav">Grand Theft Auto V</h2>
-                        <div class="info">
+                        <h2 class="tituloInfo" id="gtav" data-aos="fade-up" data-aos-duration="2000">Grand Theft Auto V</h2>
+                        <div class="info" data-aos="fade-up" data-aos-duration="2000">
                             <img src="../img/about/aboutgta5.jpg" alt="aboutgtav" class="aboutImg">
                             <p class="descripcion">Se trata de una aventura de acción de mundo abierto con multitud de misiones en la que encarnamos a tres personajes distintos: Trevor, Michael y Franklin. Además, cuenta con GTA Online, el modo multijugador en lína de GTA 5
                                 GTA V se ambienta en Los Santos, ciudad ficticia basada en Los Angeles. En cuanto a GTA Online, el multijugador permite hasta 30 jugadores en línea para explorar el mapeado del juego y disputar distintas misiones de forma cooperativa y/o competitiva
@@ -140,8 +141,8 @@
                             </ul>
                     </div>
                     <div>
-                        <h2 class="tituloInfo" id="r6">Tom Clancy's Rainbow Six Siege</h2>
-                        <div class="info">
+                        <h2 class="tituloInfo" id="r6" data-aos="fade-up" data-aos-duration="2000">Tom Clancy's Rainbow Six Siege</h2>
+                        <div class="info" data-aos="fade-up" data-aos-duration="2000">
                             <img src="../img/about/aboutr6.jpg" alt="aboutr6" class="aboutImg">
                             <p class="descripcion">Tom Clancy's Rainbow Six Siege es la última entrega de la aclamada franquicia de disparos en primera persona desarrollada por el renombrado estudio Ubisoft Montreal.
                                 El juego consiste en partidas de equipos de cinco atacantes contra cinco defensores. Los defensores deben defender un objetivo dentro de una estructura, ya sea un rehén, dos bombas o un contenedor biológico. Si logran defender al objetivo con éxito o eliminan a todos los atacantes, ganan la ronda. Los atacantes deben rescatar, desactivar, o asegurar al objetivo (respectivamente), o eliminar a los defensores para ganar.
@@ -183,5 +184,9 @@
             <img src="../img/steam.png" alt="Steam" id="logoSteamFooter">
         </a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

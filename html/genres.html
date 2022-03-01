@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Géneros</title>
 </head>
 <body>
@@ -26,31 +28,31 @@
     <main>
         <!--Ésta sección cuenta con diferentes galerías que redireccionan al usuario a lo que elijan-->
 
-        <h1>Géneros</h1>
+        <h1 class="animate__animated animate__fadeIn">Géneros</h1>
         <!--Cada género está contenido por generos y tienen su id particular, fuera del título todos los juegos están contenidos por containerImg, así como cada juego por containerItem que también tienen un ID , las imágenes tiene un contenedor aparte genresImg, los títulos también gameTitle-->
         <section id="genresContainer">
         <section class="generos" id="accion">
-            <h2 class="tituloGenero">Acción</h2>
+            <h2 class="tituloGenero animate__animated animate__fadeIn">Acción</h2>
             <div class="containerImg">
-                <div class="containerItem" id="apexArea">
+                <div class="containerItem animate__animated animate__fadeIn animate__delay-1s" id="apexArea">
                      <h2 class="whiteText gameTitle">Apex Legends</h2>
                      <a href="./specs.html#apexLegends"><img src="../img/genres/apex legends.jpg" alt="apexlegends" class="genresImg"></a>
                 </div>
-                <div class="containerItem" id="cbpArea">
+                <div class="containerItem animate__animated animate__fadeIn animate__delay-1s" id="cbpArea">
                      <h2 class="whiteText gameTitle">Cyberpunk 2077</h2>
                      <a href="./specs.html#cyberpunk2077"><img src="../img/genres/cyberpunk 2077.jpg" alt="Cyberpunk2077" class="genresImg"></a>
                      
                 </div>
-                <div class="containerItem" id="csgoArea">
+                <div class="containerItem animate__animated animate__fadeIn animate__delay-1s" id="csgoArea">
                      <h2 class="whiteText gameTitle">Counter-Strike Global Offensive</h2>
                      <a href="./specs.html#csgo"><img src="../img/genres/csgo.jpg" alt="csgo" class="genresImg"></a>
                      
                 </div>
-                <div class="containerItem" id="gtaArea">
+                <div class="containerItem animate__animated animate__fadeIn animate__delay-1s" id="gtaArea">
                      <h2 class="whiteText gameTitle">Grand Theft Auto V</h2>
                      <a href="./specs.html#gtav"><img src="../img/genres/gtav.jpg" alt="gtav" class="genresImg"></a>
                 </div>
-                <div class="containerItem" id="r6Area">
+                <div class="containerItem animate__animated animate__fadeIn animate__delay-1s" id="r6Area">
                      <h2 class="whiteText gameTitle">Tom Clancy's Rainbow Six Siege</h2>
                        <a href="./specs.html#r6"><img src="../img/genres/rssiege.jpg" alt="rainbowsix" class="genresImg"></a>
                 </div>
@@ -58,25 +60,25 @@
         </section>
 
         <section class="generos" id="aventura">
-            <h2 class="tituloGenero">Aventura</h2>
+            <h2 class="tituloGenero" data-aos="fade-up" data-aos-duration="2000">Aventura</h2>
             <div class="containerImg">
-                <div class="containerItem" id="it2Area">
+                <div class="containerItem" id="it2Area" data-aos="fade-up" data-aos-duration="2000">
                     <h2 class="whiteText gameTitle">It Takes Two</h2>
                     <img src="../img/genres/ittakes2.jpg" alt="itt2" class="genresImg">
                 </div>
-                <div class="containerItem" id="gowArea">
+                <div class="containerItem" id="gowArea" data-aos="fade-up" data-aos-duration="2000">
                     <h2 class="whiteText gameTitle">God of War</h2>
                     <img src="../img/genres/gow.jpg" alt="godofwar" class="genresImg">
                 </div>
-                <div class="containerItem" id="raftArea">
+                <div class="containerItem" id="raftArea" data-aos="fade-up" data-aos-duration="2000">
                      <h2 class="whiteText gameTitle">Raft</h2>
                     <img src="../img/genres/raft.jpg" alt="raft" class="genresImg">
                  </div>
-                <div class="containerItem" id="terrArea">
+                <div class="containerItem" id="terrArea" data-aos="fade-up" data-aos-duration="2000">
                     <h2 class="whiteText gameTitle">Terraria</h2>
                     <img src="../img/genres/terraria.jpg" alt="terraria" class="genresImg">
                 </div>
-                 <div class="containerItem" id="tmbrArea">
+                 <div class="containerItem" id="tmbrArea" data-aos="fade-up" data-aos-duration="2000">
                      <h2 class="whiteText gameTitle">Shadow of the Tomb Raider</h2>
                      <img src="../img/genres/sfttombraider.jpg" alt="sottr" class="genresImg">
                 </div>
@@ -84,25 +86,25 @@
         </section>
 
         <section class="generos" id="derol">
-            <h2 class="tituloGenero">De rol</h2>
+            <h2 class="tituloGenero" data-aos="fade-up" data-aos-duration="1000">De rol</h2>
             <div class="containerImg">
-                <div class="containerItem" id="lostarkArea">
+                <div class="containerItem" id="lostarkArea" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle">Lost Ark</h2>
                       <img src="../img/genres/lostark.jpg" alt="lostark" class="genresImg">
                 </div>
-                <div class="containerItem" id="poeArea">
+                <div class="containerItem" id="poeArea" data-aos="fade-up" data-aos-duration="1000">
                    <h2 class="whiteText gameTitle">Path of Exile</h2>
                    <img src="../img/genres/pathofexile.jpg" alt="poe" class="genresImg">
                 </div>
-                 <div class="containerItem" id="mhrArea">
+                 <div class="containerItem" id="mhrArea" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle">Monster Hunter Rise</h2>
                      <img src="../img/genres/mhrise.jpg" alt="mhrise" class="genresImg">
                 </div>
-                <div class="containerItem" id="dest2Area">
+                <div class="containerItem" id="dest2Area" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle">Destiny 2</h2>
                     <img src="../img/genres/destiny2.jpg" alt="destiny2" class="genresImg">
                  </div>
-                <div class="containerItem" id="strdwArea">
+                <div class="containerItem" id="strdwArea" data-aos="fade-up" data-aos-duration="1000">
                      <h2 class="whiteText gameTitle">Stardew Valley</h2>
                     <img src="../img/genres/stardewvalley.jpg" alt="stardewvalley" class="genresImg">
                  </div>
@@ -110,25 +112,25 @@
         </section>
 
         <section class="generos" id="estrategia">
-            <h2 class="tituloGenero">Estrategia</h2>
+            <h2 class="tituloGenero" data-aos="fade-up" data-aos-duration="1000">Estrategia</h2>
             <div class="containerImg">
-                <div class="containerItem" id="dota2Area">
+                <div class="containerItem" id="dota2Area" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle">Dota 2</h2>
                     <img src="../img/genres/dota2.jpg" alt="dota2" class="genresImg">
                 </div>
-                <div class="containerItem" id="aoe2Area">
+                <div class="containerItem" id="aoe2Area" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle" class="gameTitle">Age of Empires II: Definitive Edition</h2>
                     <img src="../img/genres/aoe2de.jpg" alt="aoe2de" class="genresImg">
                 </div>
-                <div class="containerItem" id="stsArea">
+                <div class="containerItem" id="stsArea" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle" >Slay the Spire</h2>
                     <img src="../img/genres/sts.jpg" alt="sts" class="genresImg">
                 </div>
-                <div class="containerItem" id="minionArea">
+                <div class="containerItem" id="minionArea" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle">Minion Masters</h2>
                     <img src="../img/genres/minionmasters.jpg" alt="minionmasters" class="genresImg">
                 </div>
-                <div class="containerItem" id="deceitArea">
+                <div class="containerItem" id="deceitArea" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="whiteText gameTitle">Deceit</h2>
                     <img src="../img/genres/deceit.jpg" alt="deceit" class="genresImg">
                 </div>
@@ -143,5 +145,9 @@
             <img src="../img/steam.png" alt="Steam" id="logoSteamFooter">
         </a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

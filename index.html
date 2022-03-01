@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Home</title>
 </head>
 <body>
@@ -24,27 +29,27 @@
     </header>
   
         <main>
-            <h1>Bienvenidos</h1>
+            <h1 class="animate__animated animate__fadeIn">Bienvenidos</h1>
             <div id="grilla">
-                <div class="infoPC">
-                    <h2>Mis especificaciones</h2>
+                <div class="infoPC animate__animated animate__fadeIn">
+                    <h2 >Mis especificaciones</h2>
                     <ul>
-                        <li><strong>CPU:</strong>Intel Core i5 9400</li>
-                        <li><strong>GPU:</strong>GTX 1070ti Asus Cerberus</li>
-                        <li><strong>Memoria:</strong>16GB DDR4 3200Mhz</li>
-                        <li><strong>Almacenamiento</strong>SSD: M.2 3500gb/s 512 GB + HDD 2TB</li>
-                        <li><strong>Case:</strong>Versa C22</li>
-                        <li><strong>PSU:</strong>EVGA 650W 80+ Bronce</li>
+                        <li><strong>CPU:</strong> Intel Core i5 9400</li>
+                        <li><strong>GPU:</strong> GTX 1070ti Asus Cerberus</li>
+                        <li><strong>Memoria:</strong> 16GB DDR4 3200Mhz</li>
+                        <li><strong>Almacenamiento</strong> SSD: M.2 3500gb/s 512 GB + HDD 2TB</li>
+                        <li><strong>Case:</strong> Versa C22</li>
+                        <li><strong>PSU:</strong> EVGA 650W 80+ Bronce</li>
                     </ul>
                 </div>
                 <div id="playlist">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Q0bSlf7MPHQ0d8JFKhRrD?utm_source=generator" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Q0bSlf7MPHQ0d8JFKhRrD?utm_source=generator" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="animate__animated animate__fadeIn"></iframe>
                 </div>
             
                 
             </div>
             <h2 class="tituloPerif">Mis periféricos</h2>
-            <div class="perifericos">
+            <div class="perifericos" data-aos="fade-up">
                 <div class="periferico mouse">
                     <img src="./img/perifericos/mousepng.png" alt="gproxsuperlight" class="perifImg">
                     <a href="https://www.mercadolibre.com.ar/mouse-de-juego-inalambrico-recargable-logitech-pro-series-pro-x-superlight-negro/p/MLA17406840?pdp_filters=category:MLA1714#searchVariation=MLA17406840&position=1&search_layout=stack&type=product&tracking_id=fd987236-96f4-46ef-8ee7-4af18e02fa64"><button class="comprar">Comprar</button></a>
@@ -71,5 +76,9 @@
             </a>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

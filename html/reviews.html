@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Reviews</title>
 </head>
 <body>
@@ -22,10 +24,10 @@
             </ul>
         </nav>
     </header>
-    <h1>Personal reviews</h1>
+    <h1 class="animate__animated animate__fadeIn animate__delay-0s">Personal reviews</h1>
     <main>
         <h2 class="tituloReview">Cyberpunk 2077</h2>
-        <div class="review">
+        <div class="review" data-aos="fade-up" data-aos-duration="2000">
             <img src="../img/review/cbp2077.jpg" alt="Cyberpunk-2077" class="reviewImg">
             <p class="reviewText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt provident minima ut ea ad distinctio iusto, error, inventore natus aliquid beatae quas corporis harum, ipsa fuga ipsam placeat eum. Sunt?</p>
         </div>
@@ -33,7 +35,7 @@
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/8X2kIfS6fb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="trailer"></iframe>
         </div>
         <h2 class="tituloReview">Apex Legends</h2>
-        <div class="review">
+        <div class="review" data-aos="fade-up" data-aos-duration="2000">
             <img src="../img/review/apexlegends.jfif" alt="apexlegends" class="reviewImg">
             <p class="reviewText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore officiis expedita doloribus, vel ab similique a, totam accusamus quas corporis vitae modi perferendis mollitia. Ullam non autem possimus. Explicabo, consequatur?</p>
         </div>
@@ -41,7 +43,7 @@
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/mUNYh_L250M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="trailer"></iframe>
          </div>
         <h2 class="tituloReview">Dota 2</h2>
-        <div class="review">
+        <div class="review" data-aos="fade-up" data-aos-duration="2000">
             <img src="../img/review/dota22.webp" alt="dota2" class="reviewImg">
             <p class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, exercitationem modi dolorem, quis perferendis asperiores quam recusandae voluptas, iste suscipit inventore? Debitis quod reiciendis non ducimus cum rem fugiat enim!</p>
         </div>
@@ -49,7 +51,7 @@
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/SmnqsdeHFT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="trailer"></iframe>
         </div>
         <h2 class="tituloReview">Counter-Strike Global Offensive</h2>
-        <div class="review">
+        <div class="review" data-aos="fade-up" data-aos-duration="2000">
             <img src="../img/review/csgo.png" alt="csgoreview" class="reviewImg">
             <p class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur aspernatur reiciendis nostrum odit? Nihil, ratione repellendus perspiciatis tempore hic deserunt asperiores alias libero iste, impedit nostrum dicta voluptatum cumque.</p>
         </div>
@@ -57,7 +59,7 @@
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/edYCtaNueQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="trailer"></iframe>
         </div>
         <h2 class="tituloReview">Age of Empires II: Definitive Edition</h2>
-        <div class="review">
+        <div class="review" data-aos="fade-up" data-aos-duration="2000">
             <img src="../img/review/aoede2.jpg" alt="aoe2de" class="reviewImg">
             <p class="reviewText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nam mollitia quibusdam minima corrupti beatae ea dicta dolore ducimus aspernatur consectetur sequi. Fuga vero qui quas necessitatibus delectus quisquam voluptates.</p>
         </div>
@@ -72,5 +74,9 @@
             <img src="../img/steam.png" alt="Steam" id="logoSteamFooter">
         </a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
