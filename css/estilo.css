@@ -43,6 +43,10 @@ nav ul li a {
     color: #09B3BC !important;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Responsive para PC*/
 
 @media only screen and (min-width:768px){
@@ -573,6 +577,14 @@ body {
     margin-top: 7%;
 }
 
+.card {
+    margin-bottom: 5%;
+}
+
+h5 {
+    color:#B7B839;
+}
+
 /*Estilos para playlist de home*/
 /*#playlist {
     width: 2vw;
@@ -752,13 +764,4 @@ footer {
 
 .bi-steam:hover{
     color:#285B77;
-}
-
-
-h5 {
-    color:#B7B839;
-}
-
-a {
-    text-decoration: none;
 }
