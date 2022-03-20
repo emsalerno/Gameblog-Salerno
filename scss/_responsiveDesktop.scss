@@ -1,0 +1,233 @@
+@import "variables.scss";
+
+@media only screen and (min-width:768px){
+
+    @mixin flex($justifyItem,$alignItem,$alignContent,$justifyContent,$flexDirection){
+        display: flex;
+        justify-content: $justifyContent;
+        align-items: $alignItem;
+        align-content: $alignContent;
+        justify-items: $justifyItem;
+        flex-direction: $flexDirection;
+    }
+    /*Ajustes para el navegador*/
+    nav {
+        height: 200px;
+        width: 100%;
+    }
+    
+    nav  {
+        ul{
+            @include flex(center,center,center,space-evenly,row);
+            height: 100%;
+        }
+    }
+    
+    /*Ajustes para los géneros*/
+    #genresGrid {
+        height: 100%;
+        width: 100%;
+        @include flex(center,center,center,center,column);
+        flex-wrap: nowrap;
+        }
+    .generos{
+        width: 100%;
+        @include flex(space-around,center,center,center,column);
+        margin-top: 70px;
+    }
+    #estrategia {
+        margin-bottom: 100px;
+    }
+    .containerImg{
+        width: 90%;
+        height: 230px;
+        @include flex(center,center,center,center,row);
+    }
+    .containerItem{
+        @include flex(center,center,center,center,column);
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 20%;
+    }
+    
+    .tituloGenero{
+        @include flex(center,center,center,center,row);
+    }
+    
+    .gameTitle {
+        height: 80px;
+        @include flex(center,center,center,center,row);
+    }
+    
+    #genresContainer {
+        height: 100%;
+        width: 100%;
+        @include flex(center,center,center,center,column);
+        flex-wrap: nowrap;
+        }
+    .generos{
+        width: 100%;
+        @include flex(space-around,center,center,center,column);
+        margin-top: 70px;
+    }
+    #estrategia {
+        margin-bottom: 100px;
+    }
+    .containerImg{
+        width: 90%;
+        height: 230px;
+        @include flex(center,center,center,center,row);
+    }
+    .containerItem{
+        @include flex(center,center,center,center,column);
+        text-align: center;
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 20%;
+    }
+    
+    .tituloGenero{
+        @include flex(center,center,center,center,row);
+    }
+    
+    .gameTitle {
+        height: 80px;
+        @include flex(center,center,center,center,row);
+        font-size: 1.2vw;
+    }
+    .genresImg{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*Ajustes a la sección de info/specs*/
+    .requisitos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        height: 100%;
+        grid-template-areas: "minimos recomendados";
+        margin-top: 2.5%;
+    }
+    
+    .tituloInfo {
+@include flex(center,center,center,center,row);
+        margin-top: 50px;
+        margin-bottom: 80px;
+        grid-area: titulo;
+    }
+    
+    .info{
+        display: grid;
+        height: 23.5vw;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: ". titulo"
+                             "img desc";
+    }
+    
+    .infoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aboutImg{
+        width: 100%;
+        @include flex(center,center,center,center,row);
+        padding-left: 20px;
+        grid-area: img;
+    }
+    
+    .descripcion {
+        @include flex(center,center,center,center,row);
+        width: 90%;
+        grid-area: desc;
+        padding-left: 9%;
+    }
+    
+    .req{
+        @include flex(center,flex-start,center,flex-start,column);
+        height: 250px;
+        padding: 2%;
+        list-style-type: none;
+    }
+
+    .minimos {
+        @extend .req;
+        grid-area: minimos;
+        color:$reqMinimos;
+    }
+    .recomendados {
+        @extend .req;
+        grid-area: recomendados;
+        color:$reqRecomendados;
+    }
+    
+    
+    /*Ajustes para el Index*/
+    #grilla {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 100%;
+        grid-template-areas: "info playlist";
+    }
+    #playlist {
+        grid-area: playlist;
+        @include flex(center,flex-start,center,flex-start,column);
+    }
+    
+    .infoPC {
+        grid-area: info;
+        @include flex(center,center,center,center,column);
+    }
+    
+    .infoPC {
+        ul{ 
+            list-style-type: none;
+            @include flex(center,center,center,center,column);
+        }
+    }
+
+
+    
+    .perifericos {
+        @include flex(center,center,center,space-evenly,row);
+        margin-top: 10%;
+        margin-bottom: 6.5%;
+    }
+    
+    .periferico {
+        @include flex(center,center,center,center,column);
+    }
+    
+    .perifImg{
+        margin-bottom: 10%;
+    }
+    
+    /*Ajustes para los reviews*/
+    
+    .tituloReview{
+        @include flex(center,center,center,center,row);
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .review {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "imagen review";
+        margin-bottom: 3%;
+    }
+    
+    
+    .reviewImg{
+        grid-area: imagen;
+    }
+    .reviewText{
+        grid-area: review;
+        @include flex(center,center,center,center,column);
+    }
+    }
+    

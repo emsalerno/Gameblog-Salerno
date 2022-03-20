@@ -1,11 +1,472 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@media only screen and (max-width: 768px) {
+  /*Ajustes a los items de navegador*/
+  nav {
+    width: 100%; }
+  nav ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  /*Ajustes a la playlist de home*/
+  #playlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .infoPC ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .infoPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    grid-area: info; }
+  #grilla {
+    height: 120vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "info" "playlist"; }
+  #playlist {
+    grid-area: playlist;
+    margin-bottom: 10vh; }
+  .perifericos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .periferico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: 10%; }
+  .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center; }
+  .tituloPerif {
+    margin-bottom: 5vh; }
+  /*Ajustes al apartado de géneros*/
+  .tituloGenero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  .containerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 100%; }
+  .gameTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    margin: 2.5%; }
+  .containerImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .genresImg {
+    width: 90%; }
+  /*Ajustes al apartado de specs/información*/
+  .requisitos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "minimos" "recomendados";
+    margin-bottom: 5%; }
+  .reqMobile, .minimos, .recomendados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+    padding: 4.5%; }
+  .minimos {
+    grid-area: minimos;
+    color: #8C4323;
+    margin-bottom: 10vh; }
+  .recomendados {
+    grid-area: recomendados;
+    color: #B7DD7E; }
+  .aboutImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 10%; }
+  .tituloInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    margin: 5%; }
+  .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 97%;
+    margin-top: 10%; }
+  .infoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  /*Ajustes para reviews*/
+  .tituloReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .trailer {
+    margin-bottom: 10%; } }
+
+@media only screen and (min-width: 768px) {
+  /*Ajustes para el navegador*/
+  nav {
+    height: 200px;
+    width: 100%; }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    height: 100%; }
+  /*Ajustes para los géneros*/
+  #genresGrid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .generos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: space-around;
+    flex-direction: column;
+    margin-top: 70px; }
+  #estrategia {
+    margin-bottom: 100px; }
+  .containerImg {
+    width: 90%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row; }
+  .containerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 20%; }
+  .tituloGenero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row; }
+  .gameTitle {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row; }
+  #genresContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .generos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: space-around;
+    flex-direction: column;
+    margin-top: 70px; }
+  #estrategia {
+    margin-bottom: 100px; }
+  .containerImg {
+    width: 90%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row; }
+  .containerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 20%; }
+  .tituloGenero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row; }
+  .gameTitle {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    font-size: 1.2vw; }
+  .genresImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  /*Ajustes a la sección de info/specs*/
+  .requisitos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 100%;
+    grid-template-areas: "minimos recomendados";
+    margin-top: 2.5%; }
+  .tituloInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    grid-area: titulo; }
+  .info {
+    display: grid;
+    height: 23.5vw;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: ". titulo" "img desc"; }
+  .infoContainer {
+    display: flex;
+    flex-direction: column; }
+  .aboutImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    padding-left: 20px;
+    grid-area: img; }
+  .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    width: 90%;
+    grid-area: desc;
+    padding-left: 9%; }
+  .req, .minimos, .recomendados {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    height: 250px;
+    padding: 2%;
+    list-style-type: none; }
+  .minimos {
+    grid-area: minimos;
+    color: #8C4323; }
+  .recomendados {
+    grid-area: recomendados;
+    color: #B7DD7E; }
+  /*Ajustes para el Index*/
+  #grilla {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+    grid-template-areas: "info playlist"; }
+  #playlist {
+    grid-area: playlist;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .infoPC {
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .infoPC ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .perifericos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-bottom: 6.5%; }
+  .periferico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; }
+  .perifImg {
+    margin-bottom: 10%; }
+  /*Ajustes para los reviews*/
+  .tituloReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  .review {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "imagen review";
+    margin-bottom: 3%; }
+  .reviewImg {
+    grid-area: imagen; }
+  .reviewText {
+    grid-area: review;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column; } }
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Heebo', sans-serif; }
 
 /*Estilos para el header/navegador*/
+.navbar-brand {
+  width: 10%; }
+
+.logo {
+  width: 100%;
+  height: 25%; }
+
 header {
   position: sticky;
   top: 0px;
@@ -29,375 +490,11 @@ nav ul li a {
 .nav-link {
   color: #d6d306 !important;
   text-decoration: none; }
-
-.nav-link:hover {
-  color: #09B3BC !important; }
+  .nav-link:hover {
+    color: #09B3BC !important; }
 
 a {
   text-decoration: none; }
-
-/*Responsive para PC*/
-@media only screen and (min-width: 768px) {
-  /*Ajustes para el navegador*/
-  nav {
-    height: 200px;
-    width: 100%; }
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    height: 100%; }
-  /*Ajustes para los géneros*/
-  #genresGrid {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    flex-wrap: nowrap; }
-  .generos {
-    width: 100%;
-    display: flex;
-    justify-items: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 70px; }
-  #estrategia {
-    margin-bottom: 100px; }
-  .containerImg {
-    width: 90%;
-    height: 230px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center; }
-  .containerItem {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 7px;
-    padding-right: 7px;
-    width: 20%; }
-  .tituloGenero {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center; }
-  .gameTitle {
-    height: 80px;
-    display: flex;
-    justify-items: center;
-    align-items: center; }
-  #genresContainer {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    flex-wrap: nowrap; }
-  .generos {
-    width: 100%;
-    display: flex;
-    justify-items: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 70px; }
-  #estrategia {
-    margin-bottom: 100px; }
-  .containerImg {
-    width: 90%;
-    height: 230px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center; }
-  .containerItem {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-left: 7px;
-    padding-right: 7px;
-    width: 20%; }
-  .tituloGenero {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center; }
-  .gameTitle {
-    height: 80px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    font-size: 1.2vw; }
-  .genresImg {
-    object-fit: cover;
-    width: 100%;
-    height: 100%; }
-  /*Ajustes a la sección de info/specs*/
-  .requisitos {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    height: 100%;
-    grid-template-areas: "minimos recomendados";
-    margin-top: 2.5%; }
-  .tituloInfo {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    grid-area: titulo; }
-  .info {
-    display: grid;
-    height: 23.5vw;
-    grid-template-columns: 35% 65%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: ". titulo" "img desc"; }
-  .infoContainer {
-    display: flex;
-    flex-direction: column; }
-  .aboutImg {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    padding-left: 20px;
-    grid-area: img; }
-  .descripcion {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 90%;
-    grid-area: desc;
-    padding-left: 9%; }
-  .minimos {
-    grid-area: minimos;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 250px;
-    color: #8C4323;
-    padding: 2%;
-    list-style-type: none; }
-  .recomendados {
-    grid-area: recomendados;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 250px;
-    color: #B7DD7E;
-    padding: 2%;
-    list-style-type: none; }
-  /*Ajustes para el Index*/
-  #grilla {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 100%;
-    grid-template-areas: "info playlist"; }
-  #playlist {
-    grid-area: playlist;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .infoPC {
-    grid-area: info;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .infoPC ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .perifericos {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10%;
-    margin-bottom: 6.5%;
-    justify-content: space-evenly; }
-  .periferico {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .perifImg {
-    margin-bottom: 10%; }
-  /*Ajustes para los reviews*/
-  .tituloReview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%; }
-  .review {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "imagen review";
-    margin-bottom: 3%; }
-  .reviewImg {
-    grid-area: imagen; }
-  .reviewText {
-    grid-area: review;
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
-
-/*Responsive para celular*/
-@media only screen and (max-width: 768px) {
-  /*Ajustes a los items de navegador*/
-  nav {
-    width: 100%; }
-  nav ul {
-    list-style-type: none;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
-  /*Ajustes a la playlist de home*/
-  #playlist {
-    width: 100%;
-    display: flex !important;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly; }
-  .infoPC ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .infoPC {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  /*Ajustes al apartado de géneros*/
-  .tituloGenero {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%; }
-  .containerItem {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 7px;
-    padding-right: 7px;
-    width: 100%; }
-  .gameTitle {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 2.5%; }
-  .containerImg {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center; }
-  .genresImg {
-    width: 90%; }
-  /*Ajustes al apartado de specs/información*/
-  .requisitos {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "minimos" "recomendados";
-    margin-bottom: 5%; }
-  .minimos {
-    grid-area: minimos;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    color: #8C4323;
-    padding: 4.5%; }
-  .recomendados {
-    grid-area: recomendados;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    color: #B7DD7E;
-    padding: 4.5%; }
-  .aboutImg {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center; }
-  .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10%;
-    margin-top: 10%; }
-  .tituloInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5%; }
-  .descripcion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 97%;
-    margin-top: 10%; }
-  .infoContainer {
-    display: flex;
-    flex-direction: column; }
-  /*Ajustes para reviews*/
-  .tituloReview {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .trailer {
-    margin-bottom: 10%; }
-  #grilla {
-    height: 250vw;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "info" "playlist"; }
-  #playlist {
-    grid-area: playlist; }
-  .perifericos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .periferico {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10%; } }
 
 /*Estilos para contenidos de página generalizados*/
 img {
@@ -437,14 +534,6 @@ h5 {
 .infoPC h2 {
   color: #285B77; }
 
-/*Estilos para playlist de home*/
-/*#playlist {
-    width: 2vw;
-    display: flex;
-    position: flex;
-    justify-content: space-evenly;
-}
-*/
 /*Estilos para el texto de specs*/
 .requisitos p {
   font-size: 14px; }
@@ -590,6 +679,5 @@ footer {
 .bi-steam {
   font-size: 4vh;
   color: gray; }
-
-.bi-steam:hover {
-  color: #285B77; }
+  .bi-steam:hover {
+    color: #285B77; }

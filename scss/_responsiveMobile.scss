@@ -1,0 +1,169 @@
+@import "variables.scss";
+
+@media only screen and (max-width: 768px) {
+
+    @mixin flex($justifyItem,$alignItem,$alignContent,$justifyContent,$flexDirection){
+        display:flex;
+        justify-content: $justifyContent;
+        align-items: $alignItem;
+        align-content: $alignContent;
+        justify-items: $justifyItem;
+        flex-direction: $flexDirection;
+    }
+    /*Ajustes a los items de navegador*/
+        nav {
+            width: 100%;
+        }
+    
+        nav  {
+            ul{
+                list-style-type: none;
+                height: 100%;
+                @include flex(center,center,center,space-evenly,column);
+            }
+        }
+        /*Ajustes a la playlist de home*/
+        #playlist {
+            width: 100%;
+            @include flex(center,center ,center ,space-evenly ,column);
+        }
+    
+        .infoPC{
+            ul{
+                list-style-type: none;
+                @include flex(center,center ,center ,center ,column);
+            }
+        }
+        
+        
+        .infoPC {
+            @include flex(center,center ,center ,center ,column);
+            grid-area: info;
+        }
+    
+        #grilla {
+            height: 120vw;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: "info"
+                                 "playlist";
+     
+                        
+        }
+        #playlist{
+            grid-area: playlist;
+            margin-bottom: 10vh;
+        }
+        
+        .perifericos{
+            @include flex(center,center ,center ,center ,column);
+        }
+        
+        .periferico{
+            @include flex(center,center ,center ,center ,column);
+            margin:10%;
+        }
+
+        .card-title{
+            @include flex(center,center,center ,center,column );
+            text-align: center;
+        }
+
+        .tituloPerif{
+            margin-bottom: 5vh;
+        }
+
+        /*Ajustes al apartado de géneros*/
+    
+        .tituloGenero{
+            @include flex(center,center ,center ,center ,row);
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    
+        .containerItem{
+            @include flex(center,center ,center ,center ,column);
+            padding-left: 7px;
+            padding-right: 7px;
+            width: 100%;
+        }
+        
+        .gameTitle {
+            @include flex(center,center ,center ,center ,row);
+            margin: 2.5%;
+        }
+    
+        .containerImg{
+            width: 100%;
+            @include flex(center,center ,center ,center ,column);
+    
+        }
+        .genresImg {
+            width: 90%;
+        }
+        /*Ajustes al apartado de specs/información*/
+    
+        .requisitos{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: "minimos"
+                                 "recomendados";
+            margin-bottom: 5%;
+        }
+
+        .reqMobile {
+            @include flex(center,center ,center ,center ,column);
+            text-align: center;
+            height: 250px;
+            padding: 4.5%;
+        }
+
+        .minimos{
+            @extend .reqMobile;
+            grid-area: minimos;
+            color:$reqMinimos;
+            margin-bottom: 10vh;
+    
+        }
+        .recomendados{
+            @extend .reqMobile;
+            grid-area: recomendados;
+            color:$reqRecomendados;
+        }
+    
+        .aboutImg{
+            width: 100%;
+            @include flex(center,center ,center ,center ,column);
+        }
+    
+        .info{
+            @include flex(center,center ,center ,center ,column);
+            margin-bottom: 10%;
+            margin-top: 10%;
+        }
+        .tituloInfo{
+            @include flex(center,center ,center ,center ,row);
+            margin: 5%;
+        }
+        .descripcion {
+            @include flex(center,center ,center ,center ,column);
+            width: 97%;
+            margin-top: 10%;
+        }
+    
+        .infoContainer {
+            @include flex(center,center ,center ,center ,column);
+        }
+        /*Ajustes para reviews*/
+    
+    .tituloReview{
+        @include flex(center,center ,center ,center ,column);
+    }
+    
+    .trailer{
+        margin-bottom: 10%;
+    }
+    
+    }
